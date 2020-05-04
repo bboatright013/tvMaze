@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TV Maze</title>
+    <link rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+  </head>
+  <body>
+    <div class="container">
+
+    <h1>TV Maze</h1>
+
+    <form class="form-inline" id="search-form">
+      <input class="form-control" id="search-query" placeholder="Find your show">
+      <button class="btn btn-primary" type="submit">Go!</button>
+    </form>
+
+    <div class="row mt-3" id="shows-list">
+    </div>
+<!-- Button trigger modal -->
+    <!-- <section style="display: none" id="episodes-area"> -->
+      <!-- <h2>Episodes</h2> 
+      <ul id="episodes-list">
+      </ul> -->
+      <div class="modal fade" style="background-color: rgba(0,0,0,.5);" id="episode" tabindex="-1" role="dialog" aria-labelledby="#episodes-title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="episodes-title">Episodes</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </section>   -->
+
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://unpkg.com/axios/dist/axios.js"></script>
+    <script src="tvmaze.js"></script>
+
+    </div>
+
+  </body>
+</html>
